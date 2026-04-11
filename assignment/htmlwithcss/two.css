@@ -14,6 +14,12 @@ background: radial-gradient(circle, rgba(255, 112, 174, 1) 52%, rgba(255, 255, 2
      animation: gradientBG 10s ease infinite;
     padding: 40px;
 }
+@keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
 
 h1 {
     text-align: center;
