@@ -11,6 +11,7 @@ body {
     min-height: 100vh;
    background: #ff70ae;
 background: radial-gradient(circle, rgba(255, 112, 174, 1) 52%, rgba(255, 255, 255, 1) 100%);
+     animation: gradientBG 10s ease infinite;
     padding: 40px;
 }
 
