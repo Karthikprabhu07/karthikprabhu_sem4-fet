@@ -10,13 +10,10 @@
         body {
             margin: 0;
             font-family: 'Poppins', sans-serif;
-            height: 100vh;
             background: linear-gradient(-45deg, #3f5efb, #fc466b, #00c6ff, #0072ff);
             background-size: 400% 400%;
             animation: gradientBG 10s ease infinite;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            color: white;
         }
 
         @keyframes gradientBG {
@@ -25,26 +22,25 @@
             100% { background-position: 0% 50%; }
         }
 
-        .card {
-            background: rgba(255, 255, 255, 0.1);
-            padding: 30px;
-            border-radius: 20px;
-            backdrop-filter: blur(15px);
+        .container {
+            max-width: 700px;
+            margin: 40px auto;
+            padding: 20px;
+            border: 2px solid white;
+            border-radius: 10px;
             text-align: center;
-            width: 90%;
-            max-width: 500px;
-            color: white;
-            box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+            background: rgba(0, 0, 0, 0.2);
         }
 
         h1 {
             font-weight: 600;
-            margin-bottom: 10px;
+            margin-bottom: 5px;
         }
 
         h2 {
             font-weight: 400;
-            color: #00000;
+            color: black;
+            margin-top: 0;
         }
 
         p {
@@ -54,38 +50,52 @@
 
         a {
             display: inline-block;
-            margin: 10px;
-            padding: 10px 20px;
-            border-radius: 25px;
+            margin: 10px 5px;
+            padding: 8px 15px;
+            border: 1px solid white;
+            border-radius: 5px;
             text-decoration: none;
-            background: white;
-            color: black;
-            font-weight: 500;
+            color: white;
             transition: 0.3s;
         }
 
         a:hover {
-            background: black;
-            color: white;
+            background: white;
+            color: black;
         }
 
         img {
             width: 100%;
-            border-radius: 15px;
+            max-width: 400px;
+            border-radius: 10px;
             margin-top: 15px;
         }
 
         .footer {
             display: flex;
             justify-content: space-between;
-            margin-top: 15px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+
+        /* Mobile */
+        @media (max-width: 600px) {
+            .container {
+                margin: 20px;
+                padding: 15px;
+            }
+
+            .footer {
+                flex-direction: column;
+                gap: 10px;
+            }
         }
     </style>
 </head>
 
 <body>
 
-<div class="card">
+<div class="container">
     <h1>Karthik Sudhir Prabhu</h1>
     <h2>4<sup>th</sup> Sem CSE Student at MITE</h2>
 
