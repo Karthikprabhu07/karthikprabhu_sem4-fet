@@ -9,7 +9,8 @@ body {
     line-height: 1.6;
     color: #ffffff;
     min-height: 100vh;
-    background: linear-gradient(90deg, #1e3c72 0%, #2a5298 50%, #6a82fb 100%);
+   background: #ff70ae;
+background: radial-gradient(circle, rgba(255, 112, 174, 1) 52%, rgba(255, 255, 255, 1) 100%);
     padding: 40px;
 }
 
