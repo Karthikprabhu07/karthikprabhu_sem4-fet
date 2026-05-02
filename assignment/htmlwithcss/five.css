@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Food Menu</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #f8f9fa, #e9ecef);
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+      margin-bottom: 30px;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 20px;
+      width: 260px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+    }
+
+    .card h2 {
+      color: #0077b6;
+      margin-bottom: 10px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    ul li {
+      margin: 8px 0;
+      color: #444;
+    }
+
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 40px;
+    }
+
+    a {
+      text-decoration: none;
+      color: #0077b6;
+      font-weight: bold;
+    }
+
+    a:hover {
+      color: #d62828;
+    }
+
+    hr {
+      margin-top: 40px;
+      border: none;
+      height: 1px;
+      background: #ccc;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>🍽 Food Menu</h1>
+
+  <div class="container">
+
+    <div class="card">
+      <h2>South Indian</h2>
+      <ul>
+        <li>Masala Dosa</li>
+        <li>Ghee Pudi Dosa</li>
+        <li>Idly Sambar</li>
+        <li>Tatte Idly</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>North Indian</h2>
+      <ul>
+        <li>Aloo Parota</li>
+        <li>Chole Bature</li>
+        <li>Bun Maska</li>
+        <li>Poha</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Beverages</h2>
+      <ul>
+        <li>Chai</li>
+        <li>Filter Coffee</li>
+        <li>Malt</li>
+        <li>Lassi</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <hr>
+
+  <div class="nav">
+    <a href="https://karthikprabhu07.github.io/karthikprabhu_sem4-fet/assignment/four.html">⬅ Previous</a>
+    <a href="https://karthikprabhu07.github.io/karthikprabhu_sem4-fet/assignment/six.html">Next ➡</a>
+  </div>
+
+</body>
+</html>
