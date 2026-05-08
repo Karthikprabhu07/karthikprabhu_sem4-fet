@@ -129,19 +129,15 @@
             const currentText = skill.textContent;
         
             let updatedText = prompt("Edit skill:", currentText);
-        
-            // If user pressed cancel → do nothing
+
             if (updatedText === null) return;
         
             updatedText = updatedText.trim();
-        
-            // Prevent empty input
+                
             if (updatedText === "") {
                 alert("Skill cannot be empty!");
                 return;
             }
-        
-            // Only update if changed
             if (updatedText !== currentText) {
                 skill.textContent = updatedText;
             }
