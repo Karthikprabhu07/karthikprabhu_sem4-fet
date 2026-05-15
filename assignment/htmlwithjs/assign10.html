@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Food & Drink Menu</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-family:Arial,sans-serif;
+
+    background:#f1f5f9;
+}
+
+.container{
+
+    width:400px;
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:18px;
+
+    text-align:center;
+
+    box-shadow:
+    0 6px 18px rgba(0,0,0,0.08);
+}
+
+h1{
+
+    color:#1e293b;
+
+    margin-bottom:25px;
+
+    font-size:34px;
+}
+
+h2{
+
+    margin:18px 0;
+
+    color:#334155;
+
+    font-size:22px;
+}
+
+/* Select Box */
+
+select{
+
+    width:100%;
+
+    padding:12px;
+
+    border:1px solid #cbd5e1;
+
+    border-radius:10px;
+
+    background:#f8fafc;
+
+    font-size:16px;
+
+    text-align:center;
+
+    outline:none;
+
+    transition:0.3s;
+}
+
+select:focus{
+
+    border-color:#3b82f6;
+
+    background:white;
+}
+
+/* Buttons */
+
+button{
+
+    margin-top:18px;
+
+    width:100%;
+
+    padding:12px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#2563eb;
+
+    color:white;
+
+    font-size:16px;
+
+    cursor:pointer;
+
+    transition:0.3s;
+}
+
+button:hover{
+
+    background:#1d4ed8;
+}
+
+/* Result */
+
+p{
+
+    margin-top:16px;
+
+    font-size:17px;
+
+    font-weight:bold;
+
+    color:#1e293b;
+}
+
+/* Home Button */
+
+.home{
+
+    display:inline-block;
+
+    margin-top:25px;
+
+    padding:10px 22px;
+
+    background:#e2e8f0;
+
+    border-radius:18px;
+
+    text-decoration:none;
+
+    color:#111827;
+
+    transition:0.3s;
+}
+
+.home:hover{
+
+    background:#cbd5e1;
+}
+
+hr{
+
+    margin:28px 0;
+
+    border:none;
+
+    border-top:1px solid #e2e8f0;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Food Menu</h1>
+
+    <!-- Food -->
+
+    <h2>Select Food</h2>
+
+    <select id="food">
+
+        <option value="">
+            -- Select Food --
+        </option>
+
+        <option>Pizza</option>
+        <option>Burger</option>
+        <option>Dosa</option>
+        <option>Pasta</option>
+
+    </select>
+
+    <button onclick="showFood()">
+        Show Food
+    </button>
+
+    <p id="foodResult"></p>
+
+    <hr>
+
+    <!-- Drink -->
+
+    <h2>Select Drink</h2>
+
+    <select
+    id="drink"
+    size="6">
+
+        <option>Masala Chai</option>
+        <option>Filter Coffee</option>
+        <option>Lassi</option>
+        <option>Jaljeera</option>
+        <option>Badam Milk</option>
+        <option>Sugarcane Juice</option>
+
+    </select>
+
+    <button onclick="showDrink()">
+        Show Drink
+    </button>
+
+    <p id="drinkResult"></p>
+
+    <a
+    class="home"
+    href="https://karthikprabhu07.github.io/karthikprabhu_sem4-fet/">
+
+        Home Page
+
+    </a>
+
+</div>
+
+<script>
+
+/* Show Food */
+
+function showFood(){
+
+    let food =
+    document.getElementById("food").value;
+
+    document.getElementById("foodResult")
+    .innerHTML =
+    "Selected Food : " + food;
+}
+
+/* Show Drink */
+
+function showDrink(){
+
+    let drink =
+    document.getElementById("drink").value;
+
+    document.getElementById("drinkResult")
+    .innerHTML =
+    "Selected Drink : " + drink;
+}
+
+</script>
+
+</body>
+</html>
