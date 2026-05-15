@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Z-Index Demo</title>
+
+<style>
+
+body{
+    font-family:Arial;
+    text-align:center;
+    background:#f2f2f2;
+}
+
+.area{
+    position:relative;
+    width:400px;
+    height:300px;
+    margin:40px auto;
+}
+
+.box{
+    position:absolute;
+    width:150px;
+    height:150px;
+    color:white;
+    font-size:20px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:10px;
+}
+
+.red{
+    background:red;
+    left:20px;
+    top:20px;
+    z-index:1;
+}
+
+.green{
+    background:green;
+    left:80px;
+    top:60px;
+    z-index:2;
+}
+
+.blue{
+    background:blue;
+    left:140px;
+    top:100px;
+    z-index:3;
+}
+
+.yellow{
+    background:gold;
+    color:black;
+    left:200px;
+    top:140px;
+    z-index:4;
+}
+
+button{
+    padding:10px 15px;
+    margin:5px;
+}
+
+</style>
+</head>
+
+<body>
+
+<h2>Z-Index Example</h2>
+
+<div class="area">
+
+    <div class="box red">Red</div>
+    <div class="box green">Green</div>
+    <div class="box blue">Blue</div>
+    <div class="box yellow">Yellow</div>
+
+</div>
+
+<button onclick="topBox('red')">Red</button>
+<button onclick="topBox('green')">Green</button>
+<button onclick="topBox('blue')">Blue</button>
+<button onclick="topBox('yellow')">Yellow</button>
+
+<script>
+
+let z = 5;
+
+function topBox(color){
+
+    z++;
+
+    document.querySelector("." + color)
+    .style.zIndex = z;
+}
+
+</script>
+
+</body>
+</html>
