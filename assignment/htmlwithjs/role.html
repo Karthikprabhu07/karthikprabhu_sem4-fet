@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Karthik Portfolio</title>
+
+  <style>
+
+    body{
+      font-family:Arial;
+      background:#1e293b;
+      color:white;
+      text-align:center;
+    }
+
+    .card{
+      width:60%;
+      margin:auto;
+      margin-top:60px;
+      background:#334155;
+      padding:30px;
+      border-radius:12px;
+    }
+
+    h1{
+      color:#facc15;
+      font-size:50px;
+    }
+
+    #role{
+      color:#38bdf8;
+    }
+
+    .skills{
+      background:#475569;
+      padding:15px;
+      border-radius:10px;
+      text-align:left;
+    }
+
+    button{
+      margin-top:20px;
+      padding:10px 20px;
+      border:none;
+      border-radius:8px;
+      background:#facc15;
+      cursor:pointer;
+      font-weight:bold;
+    }
+
+    a{
+      display:inline-block;
+      margin-top:15px;
+      text-decoration:none;
+      background:#38bdf8;
+      color:black;
+      padding:10px 20px;
+      border-radius:8px;
+      font-weight:bold;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <div class="card">
+
+    <h1>Karthik</h1>
+
+    <h2 id="role">
+      Cybersecurity Enthusiast
+    </h2>
+
+    <div class="skills">
+
+      <p>✔ HTML, CSS, JavaScript</p>
+
+      <p>✔ Python & C</p>
+
+      <p>✔ Cybersecurity & CTFs</p>
+
+      <p>✔ Quick Learner</p>
+
+    </div>
+
+    <button onclick="changeRole()">
+      Change Role
+    </button>
+
+    <br>
+
+    <a href="https://karthikprabhu07.github.io/karthikprabhu_sem4-fet/">
+      Home Page
+    </a>
+
+  </div>
+
+  <script>
+
+    function changeRole(){
+
+      let role =
+      prompt(
+      "Enter New Role",
+      document.getElementById("role").innerHTML
+      );
+
+      if(role != ""){
+        document.getElementById("role").innerHTML = role;
+      }
+
+    }
+
+  </script>
+
+</body>
+</html>
