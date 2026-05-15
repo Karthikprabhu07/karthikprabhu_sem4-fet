@@ -7,53 +7,59 @@
 
     body{
       font-family:Arial;
-      background:#1e293b;
-      color:white;
+      background:#0b1120;
       text-align:center;
+      color:white;
     }
 
     .card{
       width:60%;
       margin:auto;
       margin-top:60px;
-      background:#334155;
+      background:#111827;
       padding:30px;
-      border-radius:12px;
+      border-radius:15px;
+      border:2px solid #06b6d4;
     }
 
     h1{
-      color:#facc15;
+      color:#f472b6;
       font-size:50px;
     }
 
     #role{
-      color:#38bdf8;
+      color:#22d3ee;
     }
 
     .skills{
-      background:#475569;
-      padding:15px;
+      background:#1e293b;
+      padding:18px;
       border-radius:10px;
       text-align:left;
     }
 
+    .skills p{
+      color:#e2e8f0;
+    }
+
     button{
       margin-top:20px;
-      padding:10px 20px;
+      padding:10px 22px;
       border:none;
       border-radius:8px;
-      background:#facc15;
-      cursor:pointer;
+      background:#f472b6;
+      color:white;
       font-weight:bold;
+      cursor:pointer;
     }
 
     a{
       display:inline-block;
       margin-top:15px;
       text-decoration:none;
-      background:#38bdf8;
+      background:#22d3ee;
       color:black;
-      padding:10px 20px;
+      padding:10px 22px;
       border-radius:8px;
       font-weight:bold;
     }
@@ -99,8 +105,7 @@
 
     function changeRole(){
 
-      let role =
-      prompt(
+      let role = prompt(
       "Enter New Role",
       document.getElementById("role").innerHTML
       );
